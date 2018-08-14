@@ -1,0 +1,28 @@
+{
+  "name": "sourabh-web-server",
+  "version": "1.0.0",
+  "description": "Web server app using NodeJS and Express web application framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vartaks/node-web-server.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "web",
+    "server"
+  ],
+  "author": "Sourabh Vartak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vartaks/node-web-server/issues"
+  },
+  "homepage": "https://github.com/vartaks/node-web-server#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
