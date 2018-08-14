@@ -1,24 +1,24 @@
 const express = require('express');
+const hbs = require('hbs');
 
 var app = express();
 
+app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-    //res.send('<h2>Hello sourabh!</h2>');
-    res.send({
-        name: 'Sourabh',
-        age: 33,
-        likes: [
-            'table tennis',
-            'snow',
-            'mountains'
-        ]
-    })
+    res.render('home.hbs', {
+        pageTitle: 'Home Page',
+        currentYear: new Date().getFullYear(),
+        welcomeMessage: 'Welcome to Sourabh web portal'
+    });
 });
 
 app.get('/about', (req, res) => {
-    res.send('<h2>About me</h2> I am Sourabh!');
+    res.render('about.hbs', {
+        pageTitle: 'About Page',
+        currentYear: new Date().getFullYear()
+    });
 });
 
 app.get('/bad', (req, res) => {
