@@ -5,15 +5,11 @@
         <title>{{pageTitle}}</title>
     </head>
     <body>
-        <h1>
-            {{pageTitle}}
-        </h1>
+        {{> header}}
         <p>
             This is a web app powered by Express framework - NodeJS
         </p>
 
-        <footer>
-            <p>Copyright &copy; {{currentYear}}</p>
-        </footer>
+        {{> footer}}
     </body>
 </html>
